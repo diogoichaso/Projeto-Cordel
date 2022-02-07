@@ -1,0 +1,116 @@
+/*REGRAS*/
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+/*VARIÁVEIS*/
+:root{
+  /*PALETA DE CORES*/
+  --cor01: black;
+  --cor02: white;
+
+  /*FONTES*/
+  --font-cabeca: 'Changa', sans-serif;
+  --font-texto: 'Sriracha', cursive;
+}
+
+/*SELETORES*/
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+body{
+  font-family: var(--font-texto);
+  min-height: 100vh;
+}
+
+header{
+  background-color: var(--cor01);
+  font-family: var(--font-cabeca);
+  color: var(--cor02);
+  text-align: center;
+  padding: 30px;
+  margin: auto;
+}
+
+header h1{
+  font-size: 10vw;/*Conforme aumenta a largura aumenta a letra. E vice-versa*/
+  font-variant: small-caps;
+}
+
+header p{
+  font-family: sans-serif;
+}
+
+header a{
+  text-decoration: none;
+  color: var(--cor02);
+}
+
+header a:hover{
+  text-decoration: underline;
+}
+
+body article{
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  font-size: 3vw;
+  line-height: 2em;
+  
+}
+
+.container{
+  background-color: var(--cor01);
+}
+
+.branco{
+  background-color: var(--cor02);
+}
+
+.branco p{
+  padding: 10px 5px;
+  margin-left: 10px;
+}
+
+.semFundo{
+  color: var(--cor02); 
+  box-shadow: inset 6px 6px 13px #00000079;
+}
+
+.semFundo p{
+  padding: 10px 5px;
+  background-color: #0000006c;
+  margin-left: 10px;
+  width: 400px;
+}
+
+#b1{
+  padding-bottom: 15px;
+}
+
+#b2{
+  padding-top: 15px;
+}
+
+#c1{
+  background: url(imagens/background001.jpg) center center no-repeat fixed;
+  background-size: cover;
+
+}
+
+#c2{
+  background: url(imagens/background002.jpg) center center no-repeat fixed;
+  background-size: cover;
+}
+
+footer{
+  background-color: var(--cor01);
+  color: var(--cor02);
+  text-align: center;
+  font-family: sans-serif;
+  padding: 10px;
+  font-size: 1.05em;
+}
